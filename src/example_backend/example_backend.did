@@ -1,0 +1,16 @@
+type NasaData =record {
+     url:text,
+    start_date: text,
+    end_date: text,
+    date:text,
+    api_key:text,
+    thumbs:bool,
+}
+
+
+
+
+service : {
+    "set_data": (text,text,text) -> (NasaData) query;
+    "get_data_from_api": () -> (text);
+}
